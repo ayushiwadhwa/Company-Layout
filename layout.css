@@ -1,0 +1,25 @@
+body{
+    /*margin: top left bottom right*/
+    margin: 20px auto 0 auto; /* top and bottom are set to 0, left and right are set to auto*/
+    width: 80%;
+    background-color: #EFEEEC;
+}
+
+.container{
+   
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo{
+    height: 78px;
+    width: 308px;
+}
+
+header{
+    color: red;
+    font-weight: 600;
+}
