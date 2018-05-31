@@ -1,8 +1,12 @@
 body{
-    margin: 20px auto 0 auto;
+    margin: 1.2% auto 0 auto;
     width: 80%;
     background-color: #EFEEEC;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.container{
+   width: 100%;  
 }
 
 ul {
@@ -14,30 +18,9 @@ li{
 }
 
 .navbar{
-    background-color: #66655F;
-    margin-top: 23px;
-    height: 39px;  
+    margin-top: 1.5%;
+    height: 7%; 
     border-radius: 6px;
-}
-
-.footer{
-    box-sizing: border-box;
-    padding-top: 19px;
-    background-color: #66655F;
-    margin-top: 23px;
-    height: 56px;  
-    border-radius: 6px;
-    color: white;
-    padding-left: 19px;
-    
-}
-
-.footer_subtext{
-    color: #E55435;
-}
-
-.empty{
-    clear: both;
 }
 
 .navbar ul{
@@ -48,9 +31,14 @@ li{
 }
 
 .navbar ul li{
-    display: inline;
     padding: 10px;
     float: left; 
+}
+
+.navbar ul li:hover{
+    padding: 10px;
+    float: left; 
+    background-color: #E55435;
 }
 
 .navbar ul li a{
@@ -59,23 +47,39 @@ li{
     font-size: 14.5px;
     
 }
-.container{
-   width: 100%;
+
+.navbar, .footer{
+    background-color: #66655F;
+}
+
+.footer, .artileMain, .artileSide{
+    box-sizing: border-box;
+}
+
+.empty{
+    clear: both;
+}
+
+.footer{
+    padding-top: 19px;
+    margin-top: 23px;
+    height: 56px;  
+    border-radius: 6px;
+    color: white;
+    padding-left: 19px;
     
+}
+
+.footer_subtext, .articleMainHeader{
+    color: #E55435;
 }
 
 img {
     max-width: 100%;
-    max-height: 100%;
-    
-}
-
-.logo{
-    
+    max-height: 100%;   
 }
 
 .articleMainHeader{
-    color: #E55435;
     font-weight: 600;
 }
 
@@ -86,14 +90,14 @@ h3{
 }
 
 .artileMain{
-    box-sizing: border-box;
-    
-    height: 332px;
+    /*height: 56.5%;*/
     background-color: white;
     border-radius: 6px;
-    padding: 48px 80px 36px 32px;
+    padding: 48px 25px 36px 7px;
     margin-top: 12px;
+    overflow: hidden;
 }
+
 
 .mainArticle{
     float: left;
@@ -106,14 +110,12 @@ h3{
 }
 
 .artileSide{
-    
-    box-sizing: border-box;
-    height: 224px;
+    /*height: 63%;*/
     background-color: white;
     border-radius: 6px;
-    padding: 36px 21px 28px 21px;
+    padding: 36px 2px 28px 2px;
     margin-top: 12px;
-    float: right;
+    overflow: hidden;
 }
 
 .articleDesc{
@@ -125,3 +127,29 @@ p{
     margin: 23px;
     color: #726a6a;
 }
+
+
+@media only screen and (max-width: 768px), only screen and (max-height: 450px){
+    .mainSide, .mainArticle{
+        float: none;
+        width: 100%;
+    }
+    .navbar ul li{
+        float: none;
+    }
+    .navbar ul li:hover{
+        float: none; 
+        background-color: #E55435;
+    }
+    .navbar{
+        height: auto;
+    }
+    .navbar ul{
+        padding-left: 0px;
+    }
+    p{
+        margin: 12px;
+    }
+}
+
+
